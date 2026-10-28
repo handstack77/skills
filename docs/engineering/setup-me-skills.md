@@ -8,7 +8,7 @@
 
 ## 언제 쓰나
 
-Claude Code와 Codex CLI에서 플러그인을 설치한 뒤 각각 `/junchul-skills:setup-me-skills`, `$junchul-skills:setup-me-skills`로 호출하며, [에이전트](../../assets/agent.md)가 스스로 꺼내지는 않습니다. 메타데이터가 일부러 호출 불가로 표시해 두었으므로 다른 어떤 스킬도 대신 발동할 수 없습니다.
+Claude Code와 Codex CLI에서 플러그인을 설치한 뒤 각각 `/handstack-skills:setup-me-skills`, `$handstack-skills:setup-me-skills`로 호출하며, [에이전트](../../assets/agent.md)가 스스로 꺼내지는 않습니다. 메타데이터가 일부러 호출 불가로 표시해 두었으므로 다른 어떤 스킬도 대신 발동할 수 없습니다.
 
 다른 엔지니어링 스킬을 처음 쓰기 전에 저장소당 한 번 쓰세요. [triage](../../assets/skills-triage.md), [to-spec](../../assets/skills-to-spec.md), [to-tickets](../../assets/skills-to-tickets.md), [wayfinder](../../assets/skills-wayfinder.md)가 이슈가 어디 가는지 짐작하기 시작하거나 트래커에 없는 라벨을 적용한다면, 이 저장소는 아직 설정되지 않은 것입니다. 프로젝트 중간의 저장소에서도 실행할 수 있습니다. 스킬이 이미 있는 것을 읽으므로 이전 작업을 잃지 않습니다.
 

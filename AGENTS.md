@@ -8,7 +8,7 @@
 
 `engineering/`과 `productivity/`는 Claude Code와 Codex CLI의 기본 플러그인 설치 대상입니다. 두 버킷의 모든 스킬은 최상위 `README.md`에서 해당 `SKILL.md`로 연결해야 합니다. `misc/`, `in-progress/`, `deprecated/`는 기본 플러그인 설치 대상과 최상위 카탈로그에서 제외합니다.
 
-설정 방법은 [.agents/install-block.md](./.agents/install-block.md)를 따릅니다. 원본은 `.`입니다. 이 디렉토리를 로컬 마켓플레이스로 등록해 `junchul-skills@junchul` 플러그인을 설치합니다. 결정 근거는 [ADR 0002](./.agents/adr/0002-ship-as-a-claude-code-plugin.md)를 참고하세요.
+설정 방법은 [.agents/install-block.md](./.agents/install-block.md)를 따릅니다. 원본은 `.`입니다. 이 디렉토리를 로컬 마켓플레이스로 등록해 `handstack-skills@handstack` 플러그인을 설치합니다. 결정 근거는 [ADR 0002](./.agents/adr/0002-ship-as-a-claude-code-plugin.md)를 참고하세요.
 
 최상위 `README.md`의 각 스킬 항목은 스킬 이름을 해당 `SKILL.md`에 링크해야 합니다.
 
@@ -26,7 +26,7 @@
 
 ## CLI별 사용
 
-설치한 스킬은 Claude Code에서 `/junchul-skills:스킬이름`, Codex CLI에서 `$junchul-skills:스킬이름`으로 호출합니다. 문서 본문의 `/name`은 스킬을 가리키는 축약 표기이며 실제 호출에는 위 접두사를 붙입니다. Claude Code에서는 `CLAUDE.md`, Codex CLI에서는 `AGENTS.md`를 프로젝트 지침으로 사용합니다. 다른 스킬을 사용하라는 지시는 현재 CLI의 스킬 로드 수단으로 해석하고, 전용 도구가 없으면 설치된 플러그인의 해당 `SKILL.md`를 읽어 따릅니다. 사용자 호출형 스킬은 사용자가 명시적으로 요청한 경우에만 실행합니다.
+설치한 스킬은 Claude Code에서 `/handstack-skills:스킬이름`, Codex CLI에서 `$handstack-skills:스킬이름`으로 호출합니다. 문서 본문의 `/name`은 스킬을 가리키는 축약 표기이며 실제 호출에는 위 접두사를 붙입니다. Claude Code에서는 `CLAUDE.md`, Codex CLI에서는 `AGENTS.md`를 프로젝트 지침으로 사용합니다. 다른 스킬을 사용하라는 지시는 현재 CLI의 스킬 로드 수단으로 해석하고, 전용 도구가 없으면 설치된 플러그인의 해당 `SKILL.md`를 읽어 따릅니다. 사용자 호출형 스킬은 사용자가 명시적으로 요청한 경우에만 실행합니다.
 
 ## Agent skills
 

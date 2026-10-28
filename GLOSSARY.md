@@ -1,4 +1,4 @@
-# junchul Skills
+# handstack Skills
 
 Claude Code가 로드하는 에이전트 스킬(슬래시 명령과 동작)의 모음입니다. 스킬은 버킷으로 정리되며, `/setup-me-skills`가 내보내는 저장소별 설정에 의해 소비됩니다.
 

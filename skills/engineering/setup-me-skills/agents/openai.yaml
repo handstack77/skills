@@ -1,5 +1,5 @@
 interface:
-  display_name: "Setup junchul Skills"
+  display_name: "Setup handstack Skills"
   short_description: "스킬을 쓰도록 저장소 설정"
 policy:
   allow_implicit_invocation: false

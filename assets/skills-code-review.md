@@ -120,4 +120,4 @@ Spec 축은 명세가 존재하고 찾을 수 있어야 합니다. 그것은 다
 
 ## 설정 방법
 
-[설정 안내](../.agents/install-block.md)에 따라 로컬 마켓플레이스를 등록하고 플러그인을 설치하세요. Claude Code는 `/junchul-skills:스킬이름`, Codex CLI는 `$junchul-skills:스킬이름`으로 호출합니다.
+[설정 안내](../.agents/install-block.md)에 따라 로컬 마켓플레이스를 등록하고 플러그인을 설치하세요. Claude Code는 `/handstack-skills:스킬이름`, Codex CLI는 `$handstack-skills:스킬이름`으로 호출합니다.

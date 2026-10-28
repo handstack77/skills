@@ -4,7 +4,7 @@ description: "이 저장소를 엔지니어링 스킬용으로 설정합니다. 
 disable-model-invocation: true
 ---
 
-# junchul 스킬 설정
+# handstack 스킬 설정
 
 엔지니어링 스킬이 전제하는 저장소별 설정을 구성하세요.
 
