@@ -1,0 +1,5 @@
+interface:
+  display_name: "To Questionnaire"
+  short_description: "질문을 문서에 미리 모아 누군가 답하게 하기"
+policy:
+  allow_implicit_invocation: false

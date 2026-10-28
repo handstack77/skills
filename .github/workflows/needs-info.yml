@@ -1,0 +1,39 @@
+name: Close needs-info
+
+# `needs-info` 라벨이 붙은 이슈를 답이 없는 채로 14일이 지나면 닫습니다.
+# 그 라벨이 붙은 이슈만 건드립니다. 스스로 무언가를 stale로 표시하지는 않습니다.
+# 라벨이 붙은 뒤에 댓글이 달리면 `needs-info`가 제거되고 이슈는
+# `needs-triage`로 돌아가므로, 질문을 한 다음에 라벨을 추가하세요.
+
+on:
+  schedule:
+    - cron: "30 1 * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  close:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      actions: write # 액션이 상태를 Actions 캐시에 보관합니다
+    steps:
+      - uses: actions/stale@v10
+        with:
+          only-issue-labels: needs-info
+          stale-issue-label: needs-info
+          days-before-issue-stale: -1
+          days-before-issue-close: 14
+          days-before-pr-stale: -1
+          days-before-pr-close: -1
+          remove-issue-stale-when-updated: true
+          labels-to-add-when-unstale: needs-triage
+          close-issue-reason: not_planned
+          close-issue-message: >
+            14일 전에 추가 정보를 요청했지만 답을 받지 못해 이 이슈를 닫습니다.
+            제보해 주셔서 감사합니다. 세부 정보를 추가해 주실 수 있다면 여기에
+            댓글을 남겨 주세요. 다시 열겠습니다.
+            좋은 제보에 무엇이 포함되어야 하는지는
+            CONTRIBUTING.md를
+            참고하세요.

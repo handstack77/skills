@@ -1,0 +1,5 @@
+interface:
+  display_name: "Wayfinder"
+  short_description: "대규모 작업을 의사결정 티켓으로 매핑"
+policy:
+  allow_implicit_invocation: false

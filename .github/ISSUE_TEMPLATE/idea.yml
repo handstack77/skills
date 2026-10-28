@@ -1,0 +1,40 @@
+name: Idea or feedback
+description: 직접 본 실패에 기반한, 기존 스킬에 대한 변경입니다.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        이 저장소는 선별되어 있습니다. 아이디어는 `SCOPE.md`의 기준 **두 부분을 모두** 통과해야 열린 채로 남습니다.
+
+        1. **관찰된 실패**: 가상의 개선이 아니라 실제 세션에서 잘못된 일을 서술합니다.
+        2. **철학에 맞음**: `.out-of-scope/`의 어떤 것과도 일치하지 않고, 설정 옵션도, 특정 하니스 전용 분기도, 개인 워크플로 조정도 아닙니다.
+
+        새 스킬은 받지 않습니다. `misc/` 스킬은 동결되어 있습니다.
+  - type: checkboxes
+    id: read-scope
+    attributes:
+      label: 올리기 전에
+      options:
+        - label: "`SCOPE.md`를 읽고 `.out-of-scope/`를 확인했으며, 둘 중 어느 것에도 해당하지 않습니다."
+          required: true
+  - type: input
+    id: skill
+    attributes:
+      label: 스킬
+      description: 이것이 바꾸는 기존 스킬은 무엇인가요?
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: 무엇이 잘못되었나요
+      description: 스킬이 모자랐던 실제 세션. 무엇을 실행했고, 스킬이 무엇을 했고, 왜 그것이 문제였나요? 하니스와 모델을 포함해 주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: 제안하는 변경
+      description: 스킬에서 무엇을 바꾸고 싶은지 가능한 한 구체적으로 적어 주세요.
+    validations:
+      required: true

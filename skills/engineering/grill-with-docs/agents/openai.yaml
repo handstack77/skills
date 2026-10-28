@@ -1,0 +1,5 @@
+interface:
+  display_name: "Grill with Docs"
+  short_description: "설계를 집요하게 검증하고 문서 작성"
+policy:
+  allow_implicit_invocation: false

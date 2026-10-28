@@ -1,0 +1,5 @@
+interface:
+  display_name: "Teach"
+  short_description: "안내형 작업 공간에서 개념 학습"
+policy:
+  allow_implicit_invocation: false

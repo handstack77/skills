@@ -1,0 +1,5 @@
+interface:
+  display_name: "Retro"
+  short_description: "코딩 세션 회고 진행"
+policy:
+  allow_implicit_invocation: false

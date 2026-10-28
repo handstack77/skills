@@ -1,0 +1,5 @@
+interface:
+  display_name: "Loop Me"
+  short_description: "만들고 싶은 워크플로를 명세화"
+policy:
+  allow_implicit_invocation: false

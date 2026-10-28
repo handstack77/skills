@@ -1,0 +1,3 @@
+interface:
+  display_name: "Scaffold Exercises"
+  short_description: "린트 통과 가능한 강의 실습 뼈대 생성"

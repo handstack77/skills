@@ -1,0 +1,5 @@
+interface:
+  display_name: "Chief Of Staff"
+  short_description: "서브에이전트를 조율해 한 세션에서 장기 목표 추진"
+policy:
+  allow_implicit_invocation: false

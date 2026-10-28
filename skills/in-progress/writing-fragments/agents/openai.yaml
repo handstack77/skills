@@ -1,0 +1,5 @@
+interface:
+  display_name: "Writing Fragments"
+  short_description: "원시 글 조각 발굴"
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,23 @@
+name: Triage label
+
+# 새 이슈는 모두 `needs-triage`를 받으므로 큐를 건너뛰는 것이 없습니다.
+# 이슈 양식이 이미 이것을 추가하며, 이 워크플로는 다른 방식으로 열린 이슈를 잡아냅니다.
+
+on:
+  issues:
+    types: [opened]
+
+permissions: {}
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Add needs-triage
+        run: gh issue edit "$NUMBER" --add-label needs-triage
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.issue.number }}

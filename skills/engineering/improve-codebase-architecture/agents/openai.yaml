@@ -1,0 +1,5 @@
+interface:
+  display_name: "Improve Codebase Architecture"
+  short_description: "아키텍처 개선점 찾기 및 검증"
+policy:
+  allow_implicit_invocation: false

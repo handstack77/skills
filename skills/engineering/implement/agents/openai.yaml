@@ -1,0 +1,5 @@
+interface:
+  display_name: "Implement"
+  short_description: "명세나 티켓으로 작업 구현"
+policy:
+  allow_implicit_invocation: false
